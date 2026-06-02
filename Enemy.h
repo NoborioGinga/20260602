@@ -4,30 +4,13 @@
 //このクラスは、敵の基本的な属性を持ち、敵の行動や状態を管理します
 class Enemy
 {
-	public:
-		int ID; // 敵の識別子
-		const char* Name; // 敵の名前
-		int HP; // 敵の体力
-		int ATK; // 敵の攻撃力
-		int DEF; // 敵の防御力
-		int SPD; // 敵の素早さ
-		int Gold; // 敵が落とすゴールド
-		int EXP; // 敵が落とす経験値
-		Element Element; // 敵の属性
+public:
+	EnemyData Data;// 敵の基本的な属性を格納する構造体
 
-
-		// コンストラクタ
-		Enemy(const EnemyData& data)
-			: ID(data.ID),
-			Name(data.Name), 
-			HP(data.HP), 
-			ATK(data.ATK), 
-			DEF(data.DEF), 
-			SPD(data.SPD), 
-			Gold(data.Gold), 
-			EXP(data.EXP), 
-			Element(data.Element)
-		{
-		}
-
+	// コンストラクタは、EnemyData構造体の参照を受け取り、Dataメンバーに初期化します
+	Enemy(const EnemyData& data) 
+		: Data(data)  
+	{
+	}
+		
 };

@@ -5,6 +5,7 @@
 class Enemy
 {
 public:
+
 	EnemyData Data;// 敵の基本的な属性を格納する構造体
 
 	// コンストラクタは、EnemyData構造体の参照を受け取り、Dataメンバーに初期化します

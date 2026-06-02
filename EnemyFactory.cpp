@@ -2,10 +2,10 @@
 #include "Enemy.h"
 
 const EnemyData EnemyFactory::EnemyTable[] = {
-	{ 1, "スライム", 10, 5, 2, 1, 10, 5, Element::None },
-	{ 2, "ゴブリン", 20, 10, 5, 2, 20, 10, Element::Earth },
-	{ 3, "オーク", 30, 15, 8, 3, 30, 15, Element::Fire },
-	{ 4, "ドラゴン", 100, 50, 20, 5, 1000, 1000, Element::Wind}
+	{ 1, "スライム", 10, 5, 2, 1, 10, 5,50, Element::None },
+	{ 2, "ゴブリン", 20, 10, 5, 2, 20, 10,40,Element::Earth },
+	{ 3, "オーク", 30, 15, 8, 3, 30, 15,20, Element::Fire },
+	{ 4, "ドラゴン", 100, 50, 20, 5, 1000, 1000,10, Element::Wind}
 };
 
 const int EnemyFactory::EnemyTableSize = sizeof(EnemyTable) / sizeof(EnemyData);
@@ -20,4 +20,10 @@ Enemy* EnemyFactory::CreateEnemy(int ID)
 		}
 	}
 	return nullptr; // IDが見つからない場合はnullptrを返す
+}
+
+// 追加実装
+int EnemyFactory::GetEnemyCount()
+{
+	return EnemyTableSize;
 }

@@ -1,5 +1,5 @@
 #pragma once
-#include"EnemyData.h"
+#include "EnemyData.h"
 
 class Enemy;
 
@@ -14,4 +14,7 @@ class EnemyFactory
 public:
 	// 敵のIDを指定して、Enemyクラスのインスタンスを生成する静的メソッド
 	static Enemy* CreateEnemy(int ID);
+
+	// 追加: 敵データの個数を返すアクセサ（乱数範囲決定用）
+	static int GetEnemyCount();
 };

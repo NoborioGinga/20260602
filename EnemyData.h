@@ -43,6 +43,11 @@ struct EnemyData
 	/// </summary>
 	int EXP;
 
+	/// <summary>
+	///	クリティカル
+	/// </summary>
+	int CriticalRate;
+
 	Element Element;
 
 

@@ -124,6 +124,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="20260602.cpp" />
+    <ClCompile Include="EnemyFactory.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Element.h" />

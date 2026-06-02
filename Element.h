@@ -5,7 +5,7 @@ enum Element
 	Fire,
 	Water,
 	Earth,
-	Air,
+	Wind,
 	Light,
 	Dark,
 };
